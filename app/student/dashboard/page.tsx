@@ -10,12 +10,17 @@ import {
   Volume2,
   ArrowRight,
 } from "lucide-react";
-import { StudentSideNav } from "@/components/layout/student-side-nav";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { currentLessons, students } from "@/lib/mock-data";
 import { cn } from "@/lib/utils";
+import { TranslationView } from "@/app/teacher/translation-view";
+
+export function TeacherTranslationPage() {
+  return <TranslationView />;
+}
 
 const icons = { book: BookOpen, flask: FlaskConical, calculator: Calculator, globe: Globe2 };
 
@@ -24,7 +29,6 @@ const me = students[0]; // Sona Murmu, our mock logged-in student
 export default function StudentDashboardPage() {
   return (
     <div className="min-h-screen md:flex">
-      <StudentSideNav />
 
       <main className="flex-1 min-w-0 max-w-6xl mx-auto px-4 md:px-6 py-8 pb-24 md:pb-8 space-y-10">
         {/* Greeting */}

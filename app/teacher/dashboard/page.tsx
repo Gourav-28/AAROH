@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { UploadCloud, FileText, AlertTriangle, TrendingUp, Users, ArrowRight } from "lucide-react";
-import { TeacherSideNav } from "@/components/layout/teacher-side-nav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -21,7 +20,6 @@ export default function TeacherDashboardPage() {
 
   return (
     <div className="min-h-screen md:flex">
-      <TeacherSideNav />
 
       <main className="flex-1 min-w-0 max-w-6xl mx-auto px-4 md:px-6 py-8 pb-24 md:pb-8 space-y-8">
         <div>
