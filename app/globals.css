@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+Ol+Chiki:wght@400;700&display=swap');
+
+:root {
+  --font-baloo: 'Baloo 2', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-olchiki: 'Noto Sans Ol Chiki', sans-serif;
+}
+
+body {
+  background-color: #FAF6EC;
+  color: #262319;
+}
+
+.olchiki {
+  font-family: var(--font-olchiki);
+}
+
+::selection {
+  background-color: #F7E4C8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
